@@ -1,0 +1,12 @@
+[2023-12-20T12:00:00.000Z] INFO  [MyApp::Application] Starting MyApp application
+[2023-12-20T12:00:00.000Z] INFO  [MyApp::Application::Routes] Initializing routes
+[2023-12-20T12:00:00.000Z] INFO  [MyApp::Application::ActiveRecord] Connecting to database
+[2023-12-20T12:00:00.000Z] INFO  [MyApp::Application::ActionController] Starting ActionController
+[2023-12-20T12:00:00.000Z] INFO  [MyApp::Application::ActionView] Starting ActionView
+
+[2023-12-20T12:00:01.000Z] INFO  [MyApp::MoviesController] GET #index
+[2023-12-20T12:00:01.000Z] INFO  [MyApp::MoviesController] Rendered movies/index.html.erb within 1.5ms
+
+[2023-12-20T12:00:02.000Z] INFO  [MyApp::MoviesController] GET #show
+[2023-12-20T12:00:02.000Z] INFO  [MyApp::MoviesController] Got movie with id 1
+[2023-12-20T12:00:02.000Z] INFO  [MyApp::MoviesController] Rendered movies/show.html.erb within 1.5ms

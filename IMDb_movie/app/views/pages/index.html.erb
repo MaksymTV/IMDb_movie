@@ -1,0 +1,21 @@
+<h1>Список фільмів</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Назва</th>
+      <th>Рік</th>
+      <th>Рейтинг</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= movie.title %></td>
+        <td><%= movie.year %></td>
+        <td><%= movie.rating %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

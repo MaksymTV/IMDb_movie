@@ -1,0 +1,4 @@
+# locales/en.yml
+
+# Налаштовуємо переклад тексту
+greeting: "Hello, world!"

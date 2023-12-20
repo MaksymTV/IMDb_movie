@@ -1,0 +1,19 @@
+# database.yml
+
+development:
+  adapter: postgresql
+  database: my_movies_database
+  username: my_movies_user
+  password: my_movies_password
+
+test:
+  adapter: postgresql
+  database: my_movies_test_database
+  username: my_movies_test_user
+  password: my_movies_test_password
+
+production:
+  adapter: postgresql
+  database: my_movies_production_database
+  username: my_movies_production_user
+  password: my_movies_production_password

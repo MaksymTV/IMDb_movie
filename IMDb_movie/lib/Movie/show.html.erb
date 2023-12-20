@@ -1,0 +1,9 @@
+<h1><%= @movie.title %></h1>
+
+<p>Рік: <%= @movie.year %></p>
+<p>Жанр: <%= @movie.genre.name %></p>
+<p>Режисер: <%= @movie.director.name %></p>
+<p>Актори: <%= @movie.actors.map(&:name).join(', ') %></p>
+<p>Оцінка: <%= @movie.rating %></p>
+
+<p><%= @movie.plot %></p>

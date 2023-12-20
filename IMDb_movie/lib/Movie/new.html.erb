@@ -1,0 +1,40 @@
+<h1>Створити фільм</h1>
+
+<%= form_for @movie do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :year %>
+    <%= f.number_field :year, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :genre_id %>
+    <%= f.select :genre_id, Genre.all.map { |genre| [genre.name, genre.id] }, {}, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :director_id %>
+    <%= f.select :director_id, Director.all.map { |director| [director.name, director.id] }, {}, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :actors %>
+    <%= f.text_field :actors, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :plot %>
+    <%= f.text_area :plot, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :rating %>
+    <%= f.number_field :rating, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit 'Створити', class: 'btn btn

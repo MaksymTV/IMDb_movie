@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <th>Назва</th>
+      <th>Рік</th>
+      <th>Рейтинг</th>
+      <th>Опис</th>
+      <th>Постер</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% movies.each do |movie| %>
+      <tr>
+        <td><%= movie.title %></td>
+        <td><%= movie.year %></td>
+        <td><%= movie.rating %></td>
+        <td><%= movie.description %></td>
+        <td><%= movie.poster_url %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

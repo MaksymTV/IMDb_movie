@@ -1,0 +1,16 @@
+<h1>Пошук фільмів</h1>
+
+<%= form_tag movies_path, method: :get do %>
+  <input type="text" name="query" placeholder="Введіть назву фільму">
+  <input type="submit" value="Пошук">
+<% end %>
+
+<% if @movies.any? %>
+  <ul>
+    <% @movies.each do |movie| %>
+      <li><%= link_to movie.title, movie_path(movie) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>Не знайдено фільмів за запитом "<%= params[:query] %>".</p>
+<% end %>
